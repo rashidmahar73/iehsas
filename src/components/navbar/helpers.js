@@ -10,24 +10,20 @@ const navItems = [
     path: navPaths.company,
   },
   {
-    text: "CONSULTANCY",
+    text: "PROJECTS",
     path: navPaths.consultancy,
   },
   {
-    text: "COURSES",
-    path: navPaths.courses,
+    text: "SERVICES",
+    path: navPaths.services,
   },
   {
-    text: "TRAINING",
+    text: "NEWS",
     path: navPaths.training,
   },
   {
     text: "CONTACT",
-    path: navPaths.contactUs,
-  },
-  {
-    text: "BLOG",
-    path: navPaths.blog,
+    path: navPaths.contact,
   },
 ];
 

@@ -7,3 +7,4 @@ export * from "./stats";
 export * from "./card";
 export * from "./testimonials";
 export * from "./collapse";
+export * from "./inputField";

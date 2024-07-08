@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { AboutUs, FAQ, Home, OurPeople } from "../pages";
+import { AboutUs, Contact, FAQ, Home, OurPeople, Services } from "../pages";
 import { navPaths } from "../utils/constants";
 import { Testimonials } from "../pages/testimonials";
 
@@ -11,6 +11,8 @@ const Routing = () => {
       <Route path={navPaths.ourPeople} element={<OurPeople />} />
       <Route path={navPaths.testimonials} element={<Testimonials />} />
       <Route path={navPaths.FAQ} element={<FAQ/>} />
+      <Route path={navPaths.services} element={<Services/>} />
+      <Route path={navPaths.contact} element={<Contact/>} />
     </Routes>
   );
 };

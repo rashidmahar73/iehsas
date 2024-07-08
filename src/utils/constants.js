@@ -1,9 +1,9 @@
 export const navPaths = {
   company: "/company",
   consultancy: "/consultancy",
-  courses: "/courses",
+  services: "/services",
   training: "/training",
-  contactUs: "/contact-us",
+  contact: "/contact",
   blog: "/blog",
   about: "/about",
   ourPeople: "/ourPeople",
