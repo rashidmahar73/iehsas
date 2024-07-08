@@ -77,7 +77,7 @@ function AboutUs() {
             </div>
           ))}
       </div>
-      <div className="flex justify-center mt-[35px]">
+      <div className="flex justify-center my-[35px]">
         <div className="relative xs:w-[35%] sm:w-[20%] md:w-[15%] lg:w-[12%]">
           <div>
             <SlideControl
