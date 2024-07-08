@@ -19,7 +19,7 @@ function RecentProjects() {
       <div className="grid xs:grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xs:px-10 lg:px-20">
         {tabsBtns?.map(({ text, key }) => {
           return (
-            <div key={`tabs-btns-${key}`}>
+            <div key={`tabs-btns-${key}`} className="px-1">
               <Button
                 className={`${
                   currentClicked === key
@@ -36,15 +36,17 @@ function RecentProjects() {
       </div>
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 xs:px-10 lg:px-20 mt-[20px]">
         {arry?.[currentClicked]?.map(({ text }, index) => (
-          <Card
-            key={`projectCard-${index}`}
-            animationId={`project-card-${index?.toString()}`}
-            imgSrc="/assets/images/project1.jpg"
-            text={{
-              heading: text,
-              subHead: text,
-            }}
-          />
+          <div className="mx-1 my-1">
+            <Card
+              key={`projectCard-${index}`}
+              animationId={`project-card-${index?.toString()}`}
+              imgSrc="/assets/images/project1.jpg"
+              text={{
+                heading: text,
+                subHead: text,
+              }}
+            />
+          </div>
         ))}
       </div>
       <div className="w-full xs:px-10 lg:px-20">
