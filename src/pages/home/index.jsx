@@ -1,4 +1,4 @@
-import { Button, Carousel, Footer } from "../../components";
+import { Button, Carousel } from "../../components";
 import {
   AboutUs,
   HappyClients,
@@ -50,7 +50,6 @@ function Home() {
           <div>inputfield</div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
