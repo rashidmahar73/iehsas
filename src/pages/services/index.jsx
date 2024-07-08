@@ -17,7 +17,7 @@ function Services() {
           setCurrentIndex={setCurrentIndex}
           slides={listItems}
         />
-        <div className="grid grid-cols-3 mx-10">
+        <div className="grid sm:grid grid-cols-1 md:grid-cols-3 grid-cols-3 mx-10">
           {listItems
             ?.slice(currentIndex, currentIndex + slidesPerPage)
             ?.map((elem) => (

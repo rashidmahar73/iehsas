@@ -2,8 +2,8 @@ function Footer() {
   return (
     <div>
       <div className="p-20 bg-[#484848]">
-        <div className="grid grid-cols-3">
-          <div className="flex flex-col justify-between">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 grid-cols-3">
+          <div className="flex flex-col justify-between mx-5">
             <h1 className="text-[30px] font-bold text-white">ABOUT US</h1>
             <h2 className="text-[20px] text-white">Constra</h2>
             <p className="text-[15px] text-white">
@@ -36,7 +36,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-between items-center ">
+          <div className="flex flex-col justify-between mx-5">
             <h1 className="text-[30px] font-bold text-white">SERVICES</h1>
             <div className="flex flex-col">
               <h2 className="text-white">Pre-Construction</h2>
@@ -48,9 +48,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 px-20 py-4 items-center">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 grid-cols-3 px-20 py-4 items-center">
         <p className="text-[15px]">Copyright © 2024, Designed & Developed by Themefisher</p>
-        <div className="flex col-span-2 justify-end">
+        <div className="flex col-span-2  md:justify-end lg:justify-end ">
           <p className="text-black p-2">About </p>
           <p className="text-black p-2">Our people </p>
           <p className="text-black p-2">Faq </p>
