@@ -1,0 +1,95 @@
+.hs-carousel-body {
+  display: flex;
+  transition: transform 0.7s ease;
+}
+
+.hs-carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.hs-carousel-active\:bg-blue-700 {
+  background-color: #1d4ed8;
+}
+
+.hs-carousel-active\:border-blue-700 {
+  border-color: #1d4ed8;
+}
+
+.hs-carousel-active\:bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.hs-carousel-active\:border-blue-500 {
+  border-color: #3b82f6;
+}
+
+@keyframes leftAnimation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes leftTextAnimation {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+}
+
+@keyframes rightAnimation {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.firstSlideText {
+  transform: translateX(10%);
+  animation: leftTextAnimation 1s ease-out;
+}
+
+.firstSlideBtn {
+  margin-left: 10%;
+  animation: rightAnimation 1s ease-out forwards;
+}
+
+.secondSlideText {
+  text-align: center;
+  animation: rightAnimation 1s ease-out forwards;
+}
+
+.secondSlideBtn {
+  display: flex;
+  justify-content: center;
+  animation: leftAnimation 1s ease-out forwards;
+}
+
+.thirdSlideText {
+  text-align: right;
+  padding-right: 10%;
+  animation: rightAnimation 1s ease-out forwards;
+}
+
+.thirdSlideBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  animation: leftAnimation 1s ease-out forwards;
+}
